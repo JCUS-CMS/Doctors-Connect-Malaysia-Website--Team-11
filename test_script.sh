@@ -21,7 +21,7 @@ echo "${NO_COLOR}"
 
 #Importing Database alongisde the wp files
 echo "${RED}"
-mysql -u vishalm4_wpsstage -p vish117257 vishalm4_wpstage < doctorsconnect.sql
+mysql -u vishalm4_wpstage -p vish117257 vishalm4_wpstage < doctorsconnect.sql
 echo "${GREEN}"
 echo "Database Import Complete" >> log_$timestamp.txt
 
@@ -39,4 +39,4 @@ wp search-replace  "http://doctorsconnect.test" "https://a2team11.vishalm.sgedu.
 echo ""
 
 echo "Complete..!! Refresh your browser" >> log_$timestamp.txt
-#Process Completed 
+#Process Completed

@@ -21,7 +21,7 @@ echo "${NO_COLOR}"
 
 #Importing Database alongisde the wp files
 echo "${RED}"
-mysql -uvishalm4_wpstage -pvish117257 vishalm4_wp781 < doctorsconnect.sql
+mysql -uvishalm4_wpstage -pvish117257 vishalm4_wp781 < my-defaults/doctorsconnect.sql
 echo "${GREEN}"
 echo "Database Import Complete" >> log_$timestamp.txt
 

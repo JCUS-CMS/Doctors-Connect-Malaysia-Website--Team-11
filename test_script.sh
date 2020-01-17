@@ -35,7 +35,6 @@ echo "WP Config File for Staging Added" >> log_$timestamp.txt
 
 echo "${NO_COLOR}"
 #Replacing Site URL from local to Remote Site
-sh test2.sh >> log_$timestamp.txt
-
+wp search-replace "http://doctorsconnect.test" "https://a2team11.vishalm.sgedu.site/staging" --skip-columns=guid --verbose >> log_$timestamp.txt
 echo "Complete..!! Refresh your browser" >> log_$timestamp.txt
 #Process Completed

@@ -20,16 +20,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'doctorsconnect' );
+define( 'DB_NAME', 'doctorsconnectdb' );
 
 /** MySQL database username */
-define( 'DB_USER', 'wp' );
+define( 'DB_USER', 'admin' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'wp' );
+define( 'DB_PASSWORD', 'malaysia_boleh' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'a2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

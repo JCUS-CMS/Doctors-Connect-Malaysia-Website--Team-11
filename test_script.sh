@@ -21,7 +21,7 @@ echo "${NO_COLOR}"
 
 #Importing Database alongisde the wp files
 echo "${RED}"
-mysql -u vishalm4_wpstage -p vish117257 vishalm4_wp781 < doctorsconnect.sql
+mysql -uvishalm4_wpstage -pvish117257 vishalm4_wp781 < doctorsconnect.sql
 echo "${GREEN}"
 echo "Database Import Complete" >> log_$timestamp.txt
 
@@ -35,6 +35,6 @@ echo "WP Config File for Staging Added" >> log_$timestamp.txt
 
 echo "${NO_COLOR}"
 #Replacing Site URL from local to Remote Site
-wp search-replace "http://doctorsconnect.test" "https://a2team11.vishalm.sgedu.site/staging" --skip-columns=guid --verbose >> log_$timestamp.txt
+wp search-replace "http://doctorsconnect.test" "https://a2team11.vishalm.sgedu.site/staging" --skip-columns=guid --verbose
 echo "Complete..!! Refresh your browser" >> log_$timestamp.txt
 #Process Completed

@@ -154,9 +154,9 @@ class Modules {
 				'lazyload_images',
 			),
 		),
-		// 'analytics' => array(
-		// 	'title' => 'Performance Test',
-		// ),
+		'analytics' => array(
+			'title' => 'Performance Test',
+		),
 	);
 
 	/**

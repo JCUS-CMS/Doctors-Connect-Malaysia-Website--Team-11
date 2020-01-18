@@ -261,7 +261,6 @@ class Htaccess {
 					'has_been_changed' => 1,
 				);
 			}
-
 			return array(
 				'version'          => PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION,
 				'has_been_changed' => 0,
@@ -312,6 +311,7 @@ class Htaccess {
 
 			return $this->check_htaccess_php_version( dirname( $path ) );
 		}
+
 
 		// Bail if the path if the main dir.
 		if ( '/' === $path ) {

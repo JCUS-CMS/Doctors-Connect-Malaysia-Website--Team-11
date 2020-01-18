@@ -1,1 +1,5 @@
 pre-push.sh
+.htaccess
+.pre-push.sh.swo
+.pre-push.sh.swp
+WP.zip

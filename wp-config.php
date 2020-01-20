@@ -20,24 +20,23 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'doctorsconnectdb' );
+define( 'DB_NAME', 'vishalm4_wp781' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'vishalm4_wpstage');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'malaysia_boleh' );
+define( 'DB_PASSWORD', 'vish117257' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'a2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'localhost' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
-
-/**
+/**#@+
  * Authentication Unique Keys and Salts.
  *
  * Change these to different unique phrases!
@@ -46,15 +45,16 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',          'x6$O=0<S5nHZ&iemOx%WVQDCOYURwktbN}7n_!DD]B%#tvV6&/+ssdr7<FY`a%_w' );
-define( 'SECURE_AUTH_KEY',   'T~M~#S*,jVjq#``z?P`czkw*>3sK -@K=Z.t!;iP(Rfao4gtQTrf|y>v[Vj#;P,4' );
-define( 'LOGGED_IN_KEY',     '6;:+BvYZ%(rTr?H/m?<0$?e^+gL%(|@CwUVf6q^Cr=>!,)C!l/4RCt5%eh0r/sIE' );
-define( 'NONCE_KEY',         'uY$(R2;ff4+5P B_~|cGm)x]by-7[#OwB`SOulW6<@s$(@NbPS:.GTz 1:2BET>V' );
-define( 'AUTH_SALT',         '?uaC%9YunI:W^q-:0}Q}gkK;<8jZ-9/!_h>2+kR8636o~}bU5?luj[+YC6jc8V2G' );
-define( 'SECURE_AUTH_SALT',  ';BX`v$~BLRy{cE.*4!_[%QNZteJt1f] lVmba:R6M1!uOj/{b;H.-hFN2}u)Op_7' );
-define( 'LOGGED_IN_SALT',    'uu*$(R,m2Oq`8h@c{5w-YK`h4h;u-/DSj45N~AO?Po|?2]#V+}zf<J:vUb-DO{b#' );
-define( 'NONCE_SALT',        'OPV;7/#cs0h.[IOuY~&2/8;@0Q`A=s> bN*Oi!Gd63-Yfcs21~wfB?Qx1Tz$(#dL' );
-define( 'WP_CACHE_KEY_SALT', 'WN`^IOzb}n%L$XXf1)(XHpj?J$@,;&Um9u22>PIO:*Lo/yR&qBMG9ZBsZZ+f0~E!' );
+define( 'AUTH_KEY',         'f2vzqha9tkwbiahjhlnhdjgcruoifcqizassby0ne23fuyrbv5tibsczt1gn5cmi' );
+define( 'SECURE_AUTH_KEY',  'gqxfx9xclqggyxs77q6t0ikyjdpfwxoh4hcshefidva0sej7ka2yshtzywlf2adm' );
+define( 'LOGGED_IN_KEY',    'rmwyr3mcwxzurklt6betlfsuhv70kygv0w5v44y2ardbipoublfgnf0pjynql8jp' );
+define( 'NONCE_KEY',        'fesjgqxdoi7qioxlzrxyvtxxvrnxl1xjmwmktcv8mhdbmlgdplcemk9jnybur89n' );
+define( 'AUTH_SALT',        '6eeurvjk8tx4gn7gyvck4nvdz14kuoowfj8hbwbazx2qq4gzbog6v7meg4kjnvnk' );
+define( 'SECURE_AUTH_SALT', 'rha5dfg3j4zv0hmcxvz9fwrw2uirme5vhq8jfz8yuuecnvsttzdi82u3lhcywo6q' );
+define( 'LOGGED_IN_SALT',   'nlb7inpmc06meeeuvcrgaktpgi6zbbegyxkprl5qyslqwldpjnj3eg6dd4tituez' );
+define( 'NONCE_SALT',       'jhlio637htuhxacpiih41abyo1zrsolgwl7za5uqkaoacw5jvpwhnbehu1sizmxw' );
+
+/**#@-*/
 
 /**
  * WordPress Database Table prefix.
@@ -64,10 +64,19 @@ define( 'WP_CACHE_KEY_SALT', 'WN`^IOzb}n%L$XXf1)(XHpj?J$@,;&Um9u22>PIO:*Lo/yR&qB
  */
 $table_prefix = 'wp_';
 
-
-define( 'WP_DEBUG', true );
-define( 'SCRIPT_DEBUG', true );
-
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
+ */
+define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -77,4 +86,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Sets up WordPress vars and included files. */
-require_once ABSPATH . 'wp-settings.php';
+require_once( ABSPATH . 'wp-settings.php' );
+
+@include_once('/var/lib/sec/wp-settings.php'); // Added by SiteGround WordPress management system
+
+//error_log("Siteurl is ".WP_SITEURL);

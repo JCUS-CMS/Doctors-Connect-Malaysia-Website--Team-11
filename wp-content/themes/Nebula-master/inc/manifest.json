@@ -1,68 +1,28 @@
 {
-			"name": "Doctors Connect Malaysia: Through Calamity We Connect",
+			"name": "Doctors Connect Malaysia: Caring With Compassion",
 			"short_name": "Doctors Connect Malaysia",
-			"description": "Through Calamity We Connect",
+			"description": "Caring With Compassion",
 			"theme_color": "#0098d7",
 			"background_color": "#f6f6f6",
 			"gcm_sender_id": "",
 			"scope": "/",
-			"start_url": "https://a2team11.vishalm.sgedu.site/staging/?utm_source=homescreen",
+			"start_url": "http://doctorsconnect.test/?utm_source=homescreen",
 			"display": "standalone",
 			"orientation": "portrait",
 			"icons": [{
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/android-chrome-192x192.png",
-						"sizes": "192x192",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/android-chrome-512x512.png",
-						"sizes": "512x512",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/apple-touch-icon.png",
-						"sizes": "180x180",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/favicon-16x16.png",
-						"sizes": "16x16",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/favicon-32x32.png",
-						"sizes": "32x32",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/mstile-144x144.png",
-						"sizes": "144x144",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/mstile-150x150.png",
-						"sizes": "150x150",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/mstile-310x150.png",
-						"sizes": "310x150",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/mstile-310x310.png",
-						"sizes": "310x310",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/mstile-70x70.png",
-						"sizes": "70x70",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/og-thumb-2.png",
-						"sizes": "1200x630",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/og-thumb.png",
-						"sizes": "1200x600",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/twitter-card.png",
-						"sizes": "240x180",
-						"type": "image/png"
-					}, {
-						"src": "https://a2team11.vishalm.sgedu.site/staging/wp-content/themes/Nebula-master/assets/img/meta/twitter-card_large.png",
-						"sizes": "600x330",
-						"type": "image/png"
-					}]}
+				"src": "http://doctorsconnect.test/wp-content/uploads/2020/01/cropped-FINAL-LOVE-HEART-MEDICAL-LOGO-16x16.png",
+				"sizes": "16x16",
+				"type": "image/png"
+			}, {
+				"src": "http://doctorsconnect.test/wp-content/uploads/2020/01/cropped-FINAL-LOVE-HEART-MEDICAL-LOGO-32x32.png",
+				"sizes": "32x32",
+				"type": "image/png"
+			}, {
+				"src": "http://doctorsconnect.test/wp-content/uploads/2020/01/cropped-FINAL-LOVE-HEART-MEDICAL-LOGO-192x192.png",
+				"sizes": "192x192",
+				"type": "image/png"
+			}, {
+				"src": "http://doctorsconnect.test/wp-content/uploads/2020/01/cropped-FINAL-LOVE-HEART-MEDICAL-LOGO.png",
+				"sizes": "512x512",
+				"type": "image/png"
+			}]}

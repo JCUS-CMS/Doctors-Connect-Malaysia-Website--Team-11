@@ -20,22 +20,23 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'vishalm4_wp781' );
+define( 'DB_NAME', 'doctorsconnectdb' );
 
 /** MySQL database username */
-define( 'DB_USER', 'vishalm4_wpstage');
+define( 'DB_USER', 'admin');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'vish117257' );
+define( 'DB_PASSWORD', 'malaysia_boleh' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'a2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

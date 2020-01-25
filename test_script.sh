@@ -13,8 +13,8 @@ timestamp=$(date +"%Y.%m.%d-%H.%M.%S"+"CST")
 echo "${GREEN}"
 echo "Pulling from Github Repository" >> log_$timestamp.txt
 git fetch --all >> log_$timestamp.txt
-git reset --hard origin/staging >> log_$timestamp.txt
-git pull origin staging >> log_$timestamp.txt
+git reset --hard origin/stagingsite >> log_$timestamp.txt
+git pull origin stagingsite >> log_$timestamp.txt
 echo "${CYAN}"
 echo "IP: vishalm.sgedu.site" >> log_$timestamp.txt
 echo "${NO_COLOR}"

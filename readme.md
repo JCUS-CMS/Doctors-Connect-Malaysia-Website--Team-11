@@ -2,13 +2,13 @@
 ## CP3402 Content Management Systems - Team 11
 ### By: Vishal Manghnani, Kyle Ang, Abraham Garuda Laksono, Michael Wiko Widjaja
 ## Staging and Production Sites:
-There are 2 branches in this repository:
-Staging
-Master
-The staging branch contains wordpress files for the staging website.
-The master branch contains wordpress files for the production website.
+There are 2 branches in this repository:  
+Staging  
+Master  
+The staging branch contains wordpress files for the staging website.  
+The master branch contains wordpress files for the production website.  
 Staging:
-[Staging site](https://a2team11.vishalm.sgedu.site/)
+[Staging site](https://a2team11.vishalm.sgedu.site/)  
 
 ## Instructions on how to install and setup locally
 Requirements:

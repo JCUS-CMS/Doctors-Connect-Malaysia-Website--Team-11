@@ -20,6 +20,7 @@ echo "IP: vishalm.sgedu.site" >> log_$timestamp.txt
 echo "${NO_COLOR}"
 
 #Importing Database alongisde the wp files
+mysqldump -ha2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com -uadmin -pmalaysia_boleh doctorsconnectdb > my-defaults/doctorsconnectdb.sql
 echo "${RED}"
 mysql -uvishalm4_wpstage -pvish117257 vishalm4_wp781 < my-defaults/doctorsconnect.sql
 echo "${GREEN}"

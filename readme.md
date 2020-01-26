@@ -4,12 +4,12 @@
 * Vishal Manghnani 
 * Kyle Ang 
 * Abraham Garuda Laksono
-* Michael Wiko Widjaja (13684517)
+* Michael Wiko Widjaja
 ## Staging and Production Sites:
 There are 2 branches in this repository:  
 * stagingsite
 * master  
-* Staging: [Staging site](https://a2team11.vishalm.sgedu.site/)  
+* Staging: [Staging site](https://a2team11.vishalm.sgedu.site/staging)  
 * Production: [Production site](https://a2team11.vishalm.sgedu.site/prod)  
 The stagingsite branch contains wordpress files for the staging website.  
 The master branch contains wordpress files for the production website.  

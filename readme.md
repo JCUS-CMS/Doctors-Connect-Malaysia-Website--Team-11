@@ -2,11 +2,18 @@
 ## CP3402 Content Management Systems - Team 11
 ### By: Vishal Manghnani, Kyle Ang, Abraham Garuda Laksono, Michael Wiko Widjaja.
 ## Staging and Production Sites:
-
+There are 2 branches in this repository:  
+* stagingsite
+* master  
+The stagingsite branch contains wordpress files for the staging website.  
+The master branch contains wordpress files for the production website.  
+Staging:
+* [Staging site](https://a2team11.vishalm.sgedu.site/)  
+* [Production site]()
 ## Instructions on how to install and setup locally
 Requirements:
-[I'm an inline-style link with title](https://www.github.com/Varying-Vagrant-Vagrants/VVV "Github VVV")VVV (A Specialised box containing the WP Stack)
-[Vagrant](https://www.vagrantup.com/ "Vagrant Website" To run the virtual machine containing VVV
+[VVV](https://www.github.com/Varying-Vagrant-Vagrants/VVV "Github VVV") (A Specialised box containing the WP Stack)
+[Vagrant](https://www.vagrantup.com/) "Vagrant Website" To run the virtual machine containing VVV
 
 Installation Process:
 Step 1: Clone this repository since all the website files are in the project root directory clone all the files inside a folder
@@ -24,14 +31,12 @@ Step 6: Run `vagrant reload --provision`
 
 Step 7: Go to your browser and click [Go to Local WP](http://doctorsconnect.test)
 
-# Doctors Connect Malaysia Wordpress CMS Website
-## For CP3402 - Content Management Systems Assignment 2 Team 11
 
 ------------------------------------
 ### Group Members -
 
 1. Vishal Manghnani - vmanghnani95@gmail.com
-2. Kyle Ang Nathaniel Tecson -
+2. Kyle Ang Nathaniel Tecson - kyleang7.08@gmail.com
 3. Abraham Garuda Laksono -
 4. Michael Wiko Widjaja -
 ------------------------------------
@@ -234,7 +239,7 @@ _**staging** = your <branch> that you want to push to_
   
 now check out the staging URL for changes:<br/>
 
-http://staging.cms-a2.ayushmank.sgedu.site/group-007/<br/>
+https://a2team11.vishalm.sgedu.site/<br/>
 
 ------------------------------------
 
@@ -244,3 +249,10 @@ http://staging.cms-a2.ayushmank.sgedu.site/group-007/<br/>
 test 01 - testing echo command<br/>
 test 02 - setting up branches in local<br/>
 test 03 - adding all the users to DB<br/>
+
+## Updates to Staging Site & database migration into staging site 
+This website utilizes a shared RDS database for working on the local environment.  
+This is done to prevent database corruption when multiple users are editng the site content.  
+To publish the changes into the staging site, a webhook is used. The webhook is triggered in the stagingsite branch when there is git push. We also utilize another script to get an sql dump from our RDS database. The "pre-push.sh" script will create an import of our sql dump into github.  
+Using the sql dump from the RDS, the webhook will update the staging site with the new database and any new changes on a git push.  
+

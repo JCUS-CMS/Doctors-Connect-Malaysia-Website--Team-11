@@ -36,8 +36,8 @@ Step 7: Go to your browser and click [Go to Local WP](http://doctorsconnect.test
 
 1. Vishal Manghnani - vmanghnani95@gmail.com
 2. Kyle Ang Nathaniel Tecson - kyleang7.08@gmail.com
-3. Abraham Garuda Laksono -
-4. Michael Wiko Widjaja - michaelwiko.widjaja@gmail.com
+3. Abraham Garuda Laksono - abgaruda001@gmail.com
+4. Michael Wiko Widjaja - michaelwiko1@gmail.com
 ------------------------------------
 
 ------------------------------------

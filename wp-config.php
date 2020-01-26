@@ -23,21 +23,21 @@
 define( 'DB_NAME', 'doctorsconnectdb' );
 
 /** MySQL database username */
-define( 'DB_USER', 'admin');
+define( 'DB_USER', 'admin' );
 
 /** MySQL database password */
 define( 'DB_PASSWORD', 'malaysia_boleh' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'a2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com');
+define( 'DB_HOST', 'a2team11-stagingdb.co3jt0kipxzh.ap-southeast-1.rds.amazonaws.com' );
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
+define( 'DB_CHARSET', 'utf8' );
 
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-/**#@+
+/**
  * Authentication Unique Keys and Salts.
  *
  * Change these to different unique phrases!
@@ -46,16 +46,15 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'f2vzqha9tkwbiahjhlnhdjgcruoifcqizassby0ne23fuyrbv5tibsczt1gn5cmi' );
-define( 'SECURE_AUTH_KEY',  'gqxfx9xclqggyxs77q6t0ikyjdpfwxoh4hcshefidva0sej7ka2yshtzywlf2adm' );
-define( 'LOGGED_IN_KEY',    'rmwyr3mcwxzurklt6betlfsuhv70kygv0w5v44y2ardbipoublfgnf0pjynql8jp' );
-define( 'NONCE_KEY',        'fesjgqxdoi7qioxlzrxyvtxxvrnxl1xjmwmktcv8mhdbmlgdplcemk9jnybur89n' );
-define( 'AUTH_SALT',        '6eeurvjk8tx4gn7gyvck4nvdz14kuoowfj8hbwbazx2qq4gzbog6v7meg4kjnvnk' );
-define( 'SECURE_AUTH_SALT', 'rha5dfg3j4zv0hmcxvz9fwrw2uirme5vhq8jfz8yuuecnvsttzdi82u3lhcywo6q' );
-define( 'LOGGED_IN_SALT',   'nlb7inpmc06meeeuvcrgaktpgi6zbbegyxkprl5qyslqwldpjnj3eg6dd4tituez' );
-define( 'NONCE_SALT',       'jhlio637htuhxacpiih41abyo1zrsolgwl7za5uqkaoacw5jvpwhnbehu1sizmxw' );
-
-/**#@-*/
+define( 'AUTH_KEY',          'L?Lg!GUN+h1{meuoHyQH6D}MK0Gj&0o]J?Y)q3{@kb`gd+c22x/M7#@.*Wu{UlAz' );
+define( 'SECURE_AUTH_KEY',   'Vli)`1Kq$mb?5.7~i}8Zvic]Br{72Aw3)}8=+S[-nlwAY^V^^=%C%UnFm3Uh2FxO' );
+define( 'LOGGED_IN_KEY',     'LdR,$7oAjiyd+.R_/][bnlGiF(UKvbgRcu~{h6LmBG)>J@$z3_.D1,T|}&gR5@|(' );
+define( 'NONCE_KEY',         'Ngj(j$* t>a2=47$0CtSft=G oN:C>V-W}oW[[, 0GWf2*=3w@TO6lU{%elxb**3' );
+define( 'AUTH_SALT',         'i=sdieWbvpy6Rw>? n5)lrm-f!.E`Spl~#&)lvS}#te.F]XjoY]q~>JD=;GU2`i7' );
+define( 'SECURE_AUTH_SALT',  ']}uyfrDes w-HbTN60`t>[%>vemPVO`;_rgY*=Rvo^Rp+r&jdvOomQpmDP~(+Tr?' );
+define( 'LOGGED_IN_SALT',    ':u*;Og6#/j-vq]>-Q <{,mdQP)J?=?x9Eg~gaJ]sSu*+b6[-QfviF=ewB.c_)BYX' );
+define( 'NONCE_SALT',        'JcWWHk(6$^^sr3t~^uE!,3*YWSg{9K~GUZ]D,#>TKb1g^@.x1]oW8`fo:1LL]HNH' );
+define( 'WP_CACHE_KEY_SALT', 'aMjCSg8{N4NTeHvx~|?7_E+Z?!fcn{Z>L|L;jcrJjnl3|mS?ZPVHhm.ERj/RK eI' );
 
 /**
  * WordPress Database Table prefix.
@@ -65,19 +64,21 @@ define( 'NONCE_SALT',       'jhlio637htuhxacpiih41abyo1zrsolgwl7za5uqkaoacw5jvpw
  */
 $table_prefix = 'wp_';
 
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the Codex.
- *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
- */
-define( 'WP_DEBUG', false );
+
+define( 'WP_DEBUG', true );
+define( 'SCRIPT_DEBUG', true );
+
+
+
+
+define( 'WP_ALLOW_MULTISITE', true );
+define( 'MULTISITE', true );
+define( 'SUBDOMAIN_INSTALL', true );
+$base = '/';
+define( 'DOMAIN_CURRENT_SITE', 'doctorsconnect.test' );
+define( 'PATH_CURRENT_SITE', '/' );
+define( 'SITE_ID_CURRENT_SITE', 1 );
+define( 'BLOG_ID_CURRENT_SITE', 1 );
 
 /* That's all, stop editing! Happy publishing. */
 
@@ -87,8 +88,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /** Sets up WordPress vars and included files. */
-require_once( ABSPATH . 'wp-settings.php' );
-
-@include_once('/var/lib/sec/wp-settings.php'); // Added by SiteGround WordPress management system
-
-//error_log("Siteurl is ".WP_SITEURL);
+require_once ABSPATH . 'wp-settings.php';

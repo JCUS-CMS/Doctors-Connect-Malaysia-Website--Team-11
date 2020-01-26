@@ -6,7 +6,7 @@ There are 2 branches in this repository:
 * stagingsite
 * master  
 * Staging: [Staging site](https://a2team11.vishalm.sgedu.site/)  
-* Production: [Production site]()  
+* Production: [Production site](https://a2team11.vishalm.sgedu.site/prod)  
 The stagingsite branch contains wordpress files for the staging website.  
 The master branch contains wordpress files for the production website.  
 

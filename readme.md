@@ -1,6 +1,10 @@
 # Doctors Connect Malaysia Wordpress Website
 ## CP3402 Content Management Systems - Team 11
-### By: Vishal Manghnani, Kyle Ang, Abraham Garuda Laksono, Michael Wiko Widjaja.
+### Made by: 
+* Vishal Manghnani 
+* Kyle Ang 
+* Abraham Garuda Laksono
+* Michael Wiko Widjaja (13684517)
 ## Staging and Production Sites:
 There are 2 branches in this repository:  
 * stagingsite

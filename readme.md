@@ -5,11 +5,10 @@
 There are 2 branches in this repository:  
 * stagingsite
 * master  
+* Staging: [Staging site](https://a2team11.vishalm.sgedu.site/)  
+* Production: [Production site]()  
 The stagingsite branch contains wordpress files for the staging website.  
 The master branch contains wordpress files for the production website.  
-Staging:
-* [Staging site](https://a2team11.vishalm.sgedu.site/)  
-* [Production site]()
 ## Instructions on how to install and setup locally
 Requirements:
 [VVV](https://www.github.com/Varying-Vagrant-Vagrants/VVV "Github VVV") (A Specialised box containing the WP Stack)

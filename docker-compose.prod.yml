@@ -1,0 +1,23 @@
+version: "3"
+services:
+  db:
+    build: ./db
+    restart: always
+    container_name: wordpressdb
+    ports:
+      - "6612:3306"
+    volumes:
+      - ./db/mydb:/var/lib/mysql
+  web:
+    build: ./wordpress
+    container_name: wordpressweb
+    ports:
+      - "8080:80"
+    environment:
+      - WORDPRESS_DB_NAME=doctorsconnectdb
+      - WORDPRESS_DB_USER=admin
+      - WORDPRESS_DB_PASSWORD=p@ssw0rd
+      - WORDPRESS_DB_HOST=wordpressdb
+      - MYSQL_PORT_3306_TCP=6612
+    depends_on:
+      - db

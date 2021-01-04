@@ -9,17 +9,16 @@
 There are 2 branches in this repository:  
 * stagingsite
 * master  
-* Staging: [Staging site](https://a2team11.vishalm.sgedu.site/staging)  
-* Production: [Production site](https://a2team11.vishalm.sgedu.site/prod)  
-The stagingsite branch contains wordpress files for the staging website.  
-The master branch contains wordpress files for the production website.  
+* Staging: [Staging site](~~https://a2team11.vishalm.sgedu.site/staging~~) Shutdown due to being a student and not paying for hosting the service.
+* Production: [Production site](~~https://a2team11.vishalm.sgedu.site/prod~~) Shutdown due to being a student and not paying for hosting the service.
+Staging Site is the main Site.  
 
-## Instructions on how to install it and setup locally
+## Instructions on how to install it and setup locally (Legacy Pre Docker Installation) (Deprecated)
 Requirements:
-[I'm an inline-style link with title](https://www.github.com/Varying-Vagrant-Vagrants/VVV "Github VVV")VVV (A Specialised box containing the WP Stack)
+[VVV](https://www.github.com/Varying-Vagrant-Vagrants/VVV "Github VVV")VVV (A Specialised box containing the WP Stack)
 [Vagrant](https://www.vagrantup.com/ "Vagrant Website" To run the virtual machine containing VVV
 
-Installation Process:
+Installation Process :
 Step 1: Clone this repository since all the website files are in the project root directory clone all the files inside a folder
 `git clone https://github.com/JCUS-CMS/assignment-2-team-11 myfolder/`
 Step 2: Obtain the config.yml from the my-defaults folder and overwrite the default config.yml to config.yml which is in your_VVV_folder/config/config.yml
@@ -35,6 +34,19 @@ Step 6: Run `vagrant reload --provision`
 
 Step 7: Go to your browser and click [Go to Local WP](http://doctorsconnect.test)
 
+
+## Instructions on how to install it and setup locally 
+Requirements:
+[Docker](https://www.docker.com/products/docker-desktop)
+
+Installation Process: 
+Step 1: Clone this repository since all the website files are in the project root directory clone all the files inside a folder
+`git clone https://github.com/JCUS-CMS/assignment-2-team-11 myfolder/`
+
+Step 2: Run the Docker Compose Command to build the respective Wordpress and MySQL DB Images and Containers.
+` docker-compose -f docker-compose.prod.yml up --build `
+
+Step 3: Go to http://localhost:8080 and watch the WordPress Website come live.
 ------------------------------------
 ### Group Members -
 
@@ -45,7 +57,7 @@ Step 7: Go to your browser and click [Go to Local WP](http://doctorsconnect.test
 ------------------------------------
 
 ------------------------------------
-## Local Environment Setup -
+## Local Environment Setup (Deprecated) -
 <br/><br/>
 **Setting up VVV in your local machine**
 <br/>
